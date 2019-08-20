@@ -1,0 +1,19 @@
+{
+  "name": "steem_challenge",
+  "version": "1.0.0",
+  "description": "find a solution for the given trxs which pubkeys cannot be reversed using dsteem recovery method",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AusPrinzip/reversePubkeyChallenge.git"
+  },
+  "author": "lightproject",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AusPrinzip/reversePubkeyChallenge/issues"
+  },
+  "homepage": "https://github.com/AusPrinzip/reversePubkeyChallenge#readme"
+}
