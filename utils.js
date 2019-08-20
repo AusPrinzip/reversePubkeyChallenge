@@ -1,6 +1,7 @@
-function findVotePseudoTrx (client, vote) {
+
+function findVotePseudoTrx (client, vote, postURL) {
 	return new Promise(async (resolve, reject) => {
-		let  permlink = postURL.substr(postURL.lastIndexOf('/') + 1)
+		let permlink = postURL.substr(postURL.lastIndexOf('/') + 1)
 		let voter     = vote.voter
 		let history   = []
 		let match     = null
@@ -24,6 +25,13 @@ function findVotePseudoTrx (client, vote) {
 	})
 }
 
+function wait (seconds) {
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {resolve()}, seconds * 1000)
+	})
+}
+
 module.exports = {
-	findVotePseudoTrx: findVotePseudoTrx
+	findVotePseudoTrx: findVotePseudoTrx,
+	wait: wait
 }
